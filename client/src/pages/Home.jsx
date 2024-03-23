@@ -23,9 +23,9 @@ const Homes = () => {
           </motion.header>
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div className="home-content" {...headTextAnimation}>
-              <text className="text-[80px] font-black md:text-[110px] break-all">
+              <h1 className="text-[80px] font-black md:text-[110px] break-all">
                 LET&apos;S <br className="xl:block hidden" /> DO IT.
-              </text>
+              </h1>
             </motion.div>
             <motion.div
               {...headContentAnimation}

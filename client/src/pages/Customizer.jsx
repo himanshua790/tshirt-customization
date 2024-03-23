@@ -1,9 +1,19 @@
-import { AnimatePresence, motion } from "framer-motion";
+import React from "react";
 import { useSnapshot } from "valtio";
-import { CustomButton, Tab } from "../components";
-import { EditorTabs, FilterTabs } from "../config/constants";
-import { fadeAnimation, slideAnimation } from "../config/motion";
 import state from "../store";
+import { AnimatePresence, motion } from "framer-motion";
+import config from "../config/config";
+import { download } from "../assets";
+import { EditorTabs, FilterTabs, DecalTypes } from "../config/constants";
+import { fadeAnimation, slideAnimation } from "../config/motion";
+import {
+  AIPicker,
+  ColorPicker,
+  FilePicker,
+  Tab,
+  CustomButton,
+} from "../components";
+import { downloadCanvasToImage, reader } from "../config/helpers";
 const Customizer = () => {
   const snap = useSnapshot(state);
 

@@ -1,6 +1,7 @@
 import cors from 'cors';
 import * as dotenv from 'dotenv';
 import express from 'express';
+import dalleRoutes from "./routes/dalle.routes.js";
 
 dotenv.config();
 
@@ -14,5 +15,6 @@ app.get("/", (req, res) => {
         message: "Hello from server"
     })
 })
+app.use("/api/v1/dalle", dalleRoutes)
 
 app.listen(process.env.PORT, () => console.log(`Server started on port ${process.env.PORT}`))

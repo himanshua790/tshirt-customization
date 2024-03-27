@@ -1,5 +1,6 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useSnapshot } from "valtio";
+import { CustomButton } from "../components";
 import {
   headContainerAnimation,
   headContentAnimation,
@@ -7,7 +8,6 @@ import {
   slideAnimation,
 } from "../config/motion";
 import state from "../store";
-import { CustomButton } from "../components";
 const Homes = () => {
   const snap = useSnapshot(state);
   return (
@@ -23,9 +23,9 @@ const Homes = () => {
           </motion.header>
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div className="home-content" {...headTextAnimation}>
-              <h1 className="text-[80px] font-black md:text-[110px] break-all">
+              <p className="text-[80px] font-black md:text-[110px] break-all">
                 LET&apos;S <br className="xl:block hidden" /> DO IT.
-              </h1>
+              </p>
             </motion.div>
             <motion.div
               {...headContentAnimation}

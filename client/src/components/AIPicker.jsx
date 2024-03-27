@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import React from "react";
 import CustomButton from "./CustomButton";
 
 const AIPicker = ({ prompt, setPrompt, generatingImg, handleSubmit }) => {
@@ -39,7 +38,7 @@ const AIPicker = ({ prompt, setPrompt, generatingImg, handleSubmit }) => {
     </div>
   );
 };
-AIPicker.prototype ={
+AIPicker.propTypes ={
   prompt: PropTypes.string.isRequired,
   setPrompt: PropTypes.func.isRequired,
   generatingImg: PropTypes.bool.isRequired,

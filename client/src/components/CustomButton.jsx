@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import React from "react";
 import { useSnapshot } from "valtio";
 import { getContrastingColor } from "../config/helpers";
 import state from "../store";
